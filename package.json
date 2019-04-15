@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server:dev": "cross-env NODE_ENV=development node app.js"
+    "server:dev": "cross-env NODE_ENV=development node app.js",
+    "build": "babel ./assets/script --out-dir ./assets/script-bondle"
   },
   "keywords": [],
   "author": "",
@@ -18,7 +19,12 @@
     "koa-static": "^5.0.0",
     "koa-swig": "^2.2.1",
     "loadsh": "0.0.4",
-    "log4": "^3.1.0",
     "log4js": "^4.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-modules-systemjs": "^7.4.0",
+    "@babel/preset-env": "^7.4.3"
   }
 }

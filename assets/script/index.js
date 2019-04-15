@@ -1,4 +1,6 @@
-console.log('首页');
+import ESModule from './ESModule.js';
+
+console.log((new ESModule()).msg);
 
 var app6 = new Vue({
     el: '#app',

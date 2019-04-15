@@ -11,5 +11,13 @@
     <input v-model="message">
 </div>
 
-<script src="/script/index.js"></script>
+<script type="module">
+    import '/script/index.js';
+</script>
+
+<script type="nomodule" src="https://cdn.staticfile.org/systemjs/3.1.2/system.min.js"></script>
+<script type="nomodule">
+    System.import('/script-bondle/index.js')
+</script>
+
 {% endblock %}
